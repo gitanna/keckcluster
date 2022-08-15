@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # example of a cnn for image classification
 from numpy import asarray
 from numpy import unique
