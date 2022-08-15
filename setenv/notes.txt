@@ -33,3 +33,6 @@ Verify that the new environment was installed correctly:
 conda env list
 You can also use conda info --envs$
 
+
+To run interactive session on the cluster with redirecting output to a file:
+python tfexample.py  2>&1 | tee log2.txt
