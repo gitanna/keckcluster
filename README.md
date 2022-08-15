@@ -28,27 +28,34 @@ Make sure path to the virtual environment is specified correctly
 Creating an environment from an environment.yml file
 The first line of the yml file sets the new environment's name. 
 
-Activate the new environment: conda activate tf26-py38 
 
-Verify that the new environment was installed correctly:
+ Activate the new environment: 
 
-conda env list
+     $ conda activate tf26-py38 
+
+ Verify that the new environment was installed correctly:
+
+     $ conda env list
+
+
 You can also use conda info --envs$
 
 ## Running code on the cluster: 
+ 
+  To run python code on the cluster: insert into .py file (tftest.py) 1st line:
 
-To run python code on the cluster
- - insert into .py file (tftest.py) 1st line:
- #!/usr/bin/env python
-
+     $  #!/usr/bin/env python
+     
  - create .sbatch file
+ 
+ Run:
 
-Run:
-sbatch ./tf2-test.sbatch
+     $ sbatch ./tf2-test.sbatch
 
 
 To run interactive session on the cluster
- - run content of tf2-test-inter.sbatch on the command line
+ - run content of tf2-test-inter.sh on the command line
 
- If redirecting output to a file:
-python tfexample.py  2>&1 | tee log2.txt
+If redirecting output to a file: 
+
+     $ python tfexample.py  2>&1 | tee log2.txt
