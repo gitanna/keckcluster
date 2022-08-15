@@ -14,7 +14,7 @@ done
 #
 # To activate this environment, use
 #
-#     $ conda activate tf2-py38
+#     $ conda activate tf26-py38
 #
 # To deactivate an active environment, use
 #
@@ -26,7 +26,7 @@ done
 Creating an environment from an environment.yml file
 The first line of the yml file sets the new environment's name. 
 
-Activate the new environment: conda activate tf2-py38 
+Activate the new environment: conda activate tf26-py38 
 
 Verify that the new environment was installed correctly:
 
